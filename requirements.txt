@@ -1,0 +1,6 @@
+facenet_pytorch==2.6.0
+numpy==1.26.4
+opencv_python==4.9.0.80
+pillow==10.2.0
+pytorch-lightning==2.2.4
+torch==2.2.2
