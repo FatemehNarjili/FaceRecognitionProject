@@ -21,9 +21,6 @@ def find_euclidean_distance(
     test_representation: Union[np.ndarray, torch.Tensor]
 ) -> np.float64:
 
-    source_representation = source_representation.detach().numpy()
-    test_representation = test_representation.detach().numpy()
-
     euclidean_distance = source_representation - test_representation
     euclidean_distance = np.sum(np.multiply(
         euclidean_distance, euclidean_distance))
