@@ -161,3 +161,6 @@ cython_debug/
 
 # pretrained models 
 pretrained/
+
+# os files
+.DS_Store
