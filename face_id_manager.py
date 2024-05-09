@@ -30,6 +30,8 @@ class FaceIDManager:
                 match = self.is_match(face_encoding, known_embedding,
                                       distance_metric="euclidean_l2", relative_face_area=relative_face_area)
                 if match:
+                    new_embedding = (known_embedding + face_encoding) / 2
+                    self.known_faces[face_id]["embedding"] = new_embedding
                     if not self.known_faces[face_id]["present"]:
                         self.known_faces[face_id]["count"] += 1
                         self.known_faces[face_id]["present"] = True
