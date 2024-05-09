@@ -3,4 +3,5 @@ numpy==1.26.4
 opencv_python==4.9.0.80
 pillow==10.2.0
 pytorch-lightning==2.2.4
+streamlit==1.34.0
 torch==2.2.2
